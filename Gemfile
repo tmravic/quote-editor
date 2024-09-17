@@ -70,3 +70,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "simple_form"
+gem "devise", "~> 4.9"
+
+gem "pry", "~> 0.14.2"

@@ -1,0 +1,14 @@
+<main class="container">
+  <%= link_to sanitize("&larr; Back to quote"), quotes_path %>
+
+  <div class="header">
+    <h1>
+      Edit date
+    </h1>
+  </div>
+
+<!--  This is so only the header part of the line item date gets replaced when editing -->
+  <%= turbo_frame_tag dom_id(@line_item_date, :edit) do %>
+    <%= render "form", quote: @quote, line_item_date: @line_item_date %>
+  <% end %>
+</main>

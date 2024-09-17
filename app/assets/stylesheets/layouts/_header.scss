@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  justify-content: space-between;
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-l);
+
+  @include media(tabletAndUp) {
+    margin-bottom: var(--space-xl);
+  }
+}
+
+.hover-target {
+  padding: 10px;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  background-color: lightcoral;
+}
+
+.hover-target:hover + .content {
+  display: block;
+}
